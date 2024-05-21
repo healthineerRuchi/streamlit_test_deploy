@@ -357,13 +357,12 @@ def page_track_fairness():
 
 
 def main():
-    # Initialize session state variables
-    # st.set_page_config(
-    #     page_title="Fairness Dashboard",
-    #     page_icon=":guardsman:",  # Example emoji as an icon
-    #     layout="wide",  # This sets the layout to wide screen
-    #     initial_sidebar_state="expanded",  # Sidebar state can be "expanded" or "collapsed"
-    # )
+    st.set_page_config(
+        page_title="Fairness Dashboard",
+        page_icon=":guardsman:",  # Example emoji as an icon
+        layout="wide",  # This sets the layout to wide screen
+        initial_sidebar_state="expanded",  # Sidebar state can be "expanded" or "collapsed"
+    )
     if "df" not in st.session_state:
         st.session_state.df = None
     if "before_df" not in st.session_state:
